@@ -1,4 +1,4 @@
-# Database Setup
+# table
 
 ## Tables
 
@@ -17,7 +17,7 @@
 All tables/views should have (at least):
 
  * Overall description with origin of the data
- * A listing of their columns with their description
+ * A list of their columns with their description
  * SQL commands to create the table schema
  * SQL commands to create the column indexes
  * How to insert and/or update the records in the table
