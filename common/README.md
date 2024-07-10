@@ -108,14 +108,86 @@ const queue = Queue({
 while("[CONDITION]")
   await queue.push("[ARGUMENTS]");
 
-// always call flush() at the end, to make sure all the elements that remain
-// in the queue are processed
+// always call flush() at the end
+// to make sure all the elements that remain in the queue are processed
 await queue.flush();
 ```
 
 ### XMLParser
 
-...
+A streaming XML parser using [libexpat](https://libexpat.github.io/) as backend.
+Requires `node-expat` (`npm install node-expat`) to work.
+
+The parser operates on node.js [Stream](https://nodejs.org/api/stream.html)s
+and does not allocate memory other than a few transient objects that are needed
+to populate **startElement**. This allows it to parse large XML files while
+keeping an extremely low memory footprint.
+
+The parser takes a single argument, **startElement**, which is the name of the
+XML element tags in the document that will be returned to the user.
+
+The parser inherits the EventEmitter class. Each time a **startElement** is
+found, a **node** event is emitted with a single object that holds all its data
+including its child nodes. The structure of this object is as follows:
+
+ * attributes of the node are in an associative map stored under the "$" key
+ * all text on this node is concatenated and stored under the "_" key
+ * child nodes are stored in arrays under keys corresponding to their tag name
+   multiple child nodes with the same tag name are stored in the same array
+   each of this child nodes is an object that follows the same structure
+
+Example, an XML file like:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<root a="one" b="two">
+  <first c="three">First</first>
+  <second f="four">Second</second>
+</root>
+```
+
+... would get turned into an object like:
+
+```javascript
+// root
+{
+  $:{
+    a:'one',
+    b:'two'
+  },
+  first:{
+    $:{ c:'three' },
+    _:'First'
+  },
+  second:{
+    $:{ d:'four' },
+    _:'Second'
+  }
+}
+```
+
+Usage:
+
+* Instantiate the parser (```new XMLParser()```).
+* Pipe data to it as you would do with any other **Stream**.
+
+
+```javascript
+try {
+  await pipeline([
+    createReadStream("[FILENAME]"),
+    XMLParser({ startElement:'"[ELEMENT TAG]"' })
+      .on('node', node => {
+        node.$; // attributes
+        node._; // text
+
+        Object.keys(node); // child nodes
+      })
+  ]);
+} catch(e) {
+  // ...
+}
+```
 
 ## Functions
 
