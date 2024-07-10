@@ -17,12 +17,6 @@ const INPUT_READ_STREAM = createReadStream(join(__dirname, '../tmp/BioAnnotate_B
 const OUTPUT_LATLON_WRITE_STREAM = createWriteStream(join(__dirname, '../tmp/BioAnnotate_BioSample.1.latlon'));
 const OUTPUT_PLACENAME_WRITE_STREAM = createWriteStream(join(__dirname, '../tmp/BioAnnotate_BioSample.1.placename'));
 
-const BioSample_all_geo_attribute_names = Object.fromEntries(String(await readFile(join(__dirname, '../tmp/BioAnnotate_BioSample_all_geo_attribute_names')))
-  .split(/\n/)
-  .filter(v => !!v)
-  .map(stringNormalize)
-  .map(v => [v, true]));
-
 const Classifier = async args => {
   const tmuse = await tensorflow_models_universal_sentence_encoder.load();
 

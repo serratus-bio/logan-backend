@@ -7,7 +7,7 @@ import { pipeline } from 'node:stream/promises';
 import { fileURLToPath } from 'node:url';
 import { createGunzip } from 'node:zlib';
 
-import { Queue, XMLParser, arrayChunk, escapeCSVValue, msToMS, stringNormalize, warnInline } from '../common/common.js';
+import { XMLParser, escapeCSVValue, msToMS, stringNormalize, warnInline } from '../common/common.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 

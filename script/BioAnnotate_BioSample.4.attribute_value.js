@@ -29,9 +29,6 @@ try {
 
     ++OUTPUT[record.attribute_value];
 
-    // if(n[0] > 1024*1024)
-    //   break;
-
     if(!(n[0]%1024))
       warnInline('# of records processed: [' + n[0].toLocaleString() + ', ' + n[1].toLocaleString() + ', ' + n[2].toLocaleString() + '] ' + msToMS(Date.now()-ms));
   }
