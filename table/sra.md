@@ -6,7 +6,7 @@ See, [NCBI documentation site](https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud-b
 
 ### Columns
 
-Description was copied verbatim from the NCBI documentation site.
+Column description was copied verbatim from the NCBI documentation site.
 
 | name | description |
 | --- | --- |
@@ -83,7 +83,7 @@ CREATE INDEX idx_sra_bioproject ON sra(bioproject);
 
 Usage:
 
-Set up the following environment variables:
+Set up the following environment variables to its proper values:
 
  * GOOGLE_APPLICATION_CREDENTIALS
  * PGDATABASE
@@ -92,7 +92,7 @@ Set up the following environment variables:
  * PGPORT
  * PGUSER
 
- Then run,
+Then run:
 
 ```
 node script/SRA_stream_from_BQ_to_POSTGRES.js \
