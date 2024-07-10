@@ -6,7 +6,9 @@ Lambda functions that proxies ```SELECT ...``` queries to the logan database
 and returns the result as a JSON object.
 
 The function is currently deployed [here](https://us-east-1.console.aws.amazon.com/lambda/home?region=us-east-1#/functions/logan_AWS_RDS_proxy)
-and made public through a function URL (currently [https://omdmrhz5lb2nrbmodjtm5fxhqq0uevzh.lambda-url.us-east-1.on.aws/](https://omdmrhz5lb2nrbmodjtm5fxhqq0uevzh.lambda-url.us-east-1.on.aws/)).
+and made public through a function URL.
+
+[https://omdmrhz5lb2nrbmodjtm5fxhqq0uevzh.lambda-url.us-east-1.on.aws/](https://omdmrhz5lb2nrbmodjtm5fxhqq0uevzh.lambda-url.us-east-1.on.aws/).
 
 A very basic authentication scheme is in place. You should always set an
 ```Authorization: Bearer 20240516``` header on all requests, otherwise you will
@@ -95,7 +97,9 @@ To learn about the tables that are available, check out [/table](../table).
 Retrieves individual contigs from SRA assembly resources on s3://logan-pub.
 
 The function is currently deployed [here](https://us-east-1.console.aws.amazon.com/lambda/home?region=us-east-1#/functions/logan_get_contig)
-and made public through a function URL (currently [https://ag63ar36qwfndxxfc32b3w57oy0wcugc.lambda-url.us-east-1.on.aws/](https://ag63ar36qwfndxxfc32b3w57oy0wcugc.lambda-url.us-east-1.on.aws/)).
+and made public through a function URL.
+
+[https://ag63ar36qwfndxxfc32b3w57oy0wcugc.lambda-url.us-east-1.on.aws/](https://ag63ar36qwfndxxfc32b3w57oy0wcugc.lambda-url.us-east-1.on.aws/).
 
 A very basic authentication scheme is in place. You should always set an
 ```Authorization: Bearer 20240522``` header on all requests, otherwise you will
