@@ -14,4 +14,6 @@
 
 ...
 
-For functions, see code.
+## Functions
+
+See code.
