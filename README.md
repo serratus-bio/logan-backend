@@ -1,10 +1,10 @@
 # logan-backend
 
-Table schemas and collection of scripts that were used to build the logan (serratus v2) project.
+Table schemas and collection of scripts that were used to build the logan (but currently serratus v2) project.
 
 ## [common](common)
 
-Common classes in use by all the scripts here.
+Common classes and functions in use by all the scripts here.
 
 ## data
 
