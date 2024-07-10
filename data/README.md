@@ -16,7 +16,9 @@ List of attribute_name(s) that was compiled from:
 
 ### worldcities.csv
 
+List of city and country names used by the BioSample attribute_value classifier. Creative Commons Attribution 4.0 license.
 
+Attrbution: [https://simplemaps.com/data/world-cities](https://simplemaps.com/data/world-cities)
 
 ### WWF_TEW
 
