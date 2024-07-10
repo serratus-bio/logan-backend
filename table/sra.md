@@ -2,12 +2,14 @@
 
 Raw copy of (most of the columns in the) SRA metadata, fetched from BigQuery.
 
-See description on the [NCBI documentation site](https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud-based-metadata-table/).
+See, [NCBI documentation site](https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud-based-metadata-table/).
 
 ### Columns
 
-*Description was copied verbatim from the NCBI documentation site*
+*Description was copied verbatim from the NCBI documentation site.*
 
+| name | description |
+| --- | --- |
 | **acc** | SRA Run accession in the form of SRR######## (ERR or DRR for INSDC partners) |
 | **assay_type** | Type of library (i.e. AMPLICON, RNA-Seq, WGS, etc) |
 | **center_name** | Name of the sequencing center |
@@ -26,26 +28,14 @@ See description on the [NCBI documentation site](https://www.ncbi.nlm.nih.gov/sr
 | **releasedate** | The date on which the data was released |
 | **bioproject** | BioProject accession in the form of PRJNA######## (PRJEB####### or PRJDB###### for INSDC partners) |
 | **mbytes** | Number of mega bytes of data in the SRA Run |
-| **loaddate** | The date when the data was loaded into SRA |
 | **avgspotlen** | Calculated average read length |
 | **mbases** | Number of mega bases in the SRA Runs |
-| **insertsize** | Submitter provided insert size |
 | **library_name** | The name of the library |
 | **biosamplemodel_sam** | The BioSample package/model that was picked |
 | **collection_date_sam** | The collection date of the sample |
 | **geo_loc_name_country_calc** | Name of the country where the sample was collected |
 | **geo_loc_name_country_continent_calc** | Name of the continent where the sample was collected |
 | **geo_loc_name_sam** | Full location of collection |
-| **ena_first_public_run** | Date when INSDC partner record was public |
-| **ena_last_update_run** | Date when INSDC partner record was updated |
-| **sample_name_sam** | INSDC sample name |
-| **datastore_filetype** | Type of files available to download from SRA |
-| **datastore_provider** | Locations of where the files are available to download from |
-| **datastore_region** | Regions of where the data is located |
-| **attributes** | Full list of sample attributes in a nested(array) structure |
-| **attributes** | STRING 	Attribute's name |
-| **attributes** | STRING 	Attribute's value |
-| **jattr** | JSON based string of the sample attributes |
 
 ### Schema (SQL)
 
