@@ -20,4 +20,4 @@ Code for the AWS Lambda functions that support the logan project.
 
 ## [table](table)
 
-Information about all the tables in the postgres database that support the logan project.
+Information about all tables in the postgres database that support the logan project.

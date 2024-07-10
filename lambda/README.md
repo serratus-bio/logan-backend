@@ -80,7 +80,7 @@ curl \
 
 ... would return the first object of the previous example.
 
-To learn about the tables that are available, check out [/table](../table).
+To learn about the tables that are available, check out [table](../table).
 
 ### Things to improve
 

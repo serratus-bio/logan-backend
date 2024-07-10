@@ -1,5 +1,19 @@
 # Database Setup
 
+## Tables
+
+* [bioproject](bioproject.md)
+* [biosample](biosample.md)
+* [biosample_geographical_location](biosample_geographical_location.md)
+* [geometry_multipolygon_4326](geometry_multipolygon_4326.md)
+* [geometry_polygon_4326_wwf_tew](geometry_polygon_4326_wwf_tew.md)
+* [sra](sra.md)
+
+## Materialized Views
+
+* [bgl_gm4326](bgl_gm4326.md)
+* [bgl_gp4326_wwf_tew](bgl_gp4326_wwf_tew.md)
+
 (Assuming a clean postgres instance, and a user with enough privileges)
 
 ### Create the database
