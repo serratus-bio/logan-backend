@@ -6,7 +6,7 @@ See, [NCBI documentation site](https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud-b
 
 ### Columns
 
-*Description was copied verbatim from the NCBI documentation site.*
+Description was copied verbatim from the NCBI documentation site.
 
 | name | description |
 | --- | --- |
@@ -82,7 +82,25 @@ CREATE INDEX idx_sra_bioproject ON sra(bioproject);
 [SRA_stream_from_BQ_to_POSTGRES.js](../script/SRA_stream_from_BQ_to_POSTGRES.js)
 
 Usage:
-```node script/SRA_stream_from_BQ_to_POSTGRES.js --query 'SELECT acc, assay_type, center_name, consent, experiment, sample_name, instrument, librarylayout, libraryselection, librarysource, platform, sample_acc, biosample, organism, sra_study, releasedate, bioproject, mbytes, avgspotlen, mbases, library_name, biosamplemodel_sam, collection_date_sam, geo_loc_name_country_calc, geo_loc_name_country_continent_calc, geo_loc_name_sam FROM `nih-sra-datastore.sra.metadata`' --table sra```
+
+Set up the following environment variables:
+
+ * GOOGLE_APPLICATION_CREDENTIALS
+ * PGDATABASE
+ * PGHOST
+ * PGPASSWORD
+ * PGPORT
+ * PGUSER
+
+ Then run,
+
+```
+node script/SRA_stream_from_BQ_to_POSTGRES.js \
+  --query 'SELECT acc, assay_type, center_name, consent, experiment, sample_name, instrument, librarylayout, libraryselection, librarysource, platform, sample_acc, biosample, organism, sra_study, releasedate, bioproject, mbytes, avgspotlen, mbases, library_name, biosamplemodel_sam, collection_date_sam, geo_loc_name_country_calc, geo_loc_name_country_continent_calc, geo_loc_name_sam FROM `nih-sra-datastore.sra.metadata`' \
+  --table sra
+```
 
 Output:
-```# of records BQ: 30,986,947 POSTGRES: 30,986,947  182m16s (Queue.n=1024)```
+```
+# of records BQ: 30,986,947 POSTGRES: 30,986,947  182m16s (Queue.n=1024)
+```
