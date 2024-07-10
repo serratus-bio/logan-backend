@@ -6,4 +6,4 @@
 
 ### Indexes (SQL)
 
-### How to create/update
+### Insert / Update

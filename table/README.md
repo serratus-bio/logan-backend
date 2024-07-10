@@ -20,4 +20,4 @@ All tables/views should have (at least):
  * A listing of their columns with their description
  * SQL commands to create the table schema
  * SQL commands to create the column indexes
- * Workflow used to create/update the table
+ * How to insert and/or update the values in the table
