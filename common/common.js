@@ -2,7 +2,7 @@ import { Parser } from 'node-expat';
 import { clearLine, cursorTo } from 'node:readline';
 import { createInterface } from 'node:readline/promises';
 
-export const Aggregator = args => ({
+export const Counter = args => ({
   a:undefined,
   o:undefined,
   push:function(v) {
