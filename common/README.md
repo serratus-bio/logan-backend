@@ -53,4 +53,4 @@ even after they were deleted:
 
 ## Functions
 
-See code.
+[See code](common.js).
