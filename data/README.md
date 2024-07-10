@@ -22,4 +22,4 @@ List of attribute_name(s) that was compiled from:
 
 ESRI Shapefile(s) (.dbf and .shp) with boundaries for the Terrestrial Ecoregions of the World project by the WWF.
 
-Source: [](https://www.worldwildlife.org/publications/terrestrial-ecoregions-of-the-world)
+Source: [https://www.worldwildlife.org/publications/terrestrial-ecoregions-of-the-world]()
