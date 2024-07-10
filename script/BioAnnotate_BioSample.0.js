@@ -592,7 +592,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 //   wastewater treatment plant
 //   wound area
 
-const BioSample_all_geo_attribute_names = Object.fromEntries(String(await readFile(join(__dirname, '../tmp/BioAnnotate_BioSample_all_geo_attribute_names')))
+const BioSample_all_geo_attribute_names = Object.fromEntries(String(await readFile(join(__dirname, '../data/BioAnnotate_BioSample_all_geo_attribute_names')))
   .split(/\n/)
   .filter(v => !!v)
   .map(stringNormalize)

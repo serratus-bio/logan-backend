@@ -1,0 +1,1471 @@
+_country
+'geo_loc_name'
+'lat_lon'
+"""geographic location (country and/or sea,region)"""
+"""station"
+"environmental system, feature (envo:00002297)"
+"environmental system, marine region"
+"geo_loc_name (gsv, gulf st. vincent; sg, spencer gulf; e, east; w, west; vh, victor harbor; cj, cape jervis)"
+"geographic location (country and/or sea, region)"
+"geographic location (country and/or sea,region)"
+"geographic location (country:region,area)"
+"geographic location (countryand/orsea,region)"
+"geographic location (latitude, longitude)"
+"geographic location, country and/or sea"
+"geographic_location__country_and_or_sea_region_"
+"geographical location (country:region, location)"
+"geogrphic location (country and/or sea, region)"
+"host, isolation_source"
+"lat,lon"
+"latitude, longitude"
+"latitude,longitude"
+"longitude, latitude"
+"origin (province, sampling site)"
+"sample storage, location"
+"sample_name_,organism,isolation_source,collection_data_,geographic_location_,latitude,longitude"
+"sampling campaign, plateform"
+"sampling event, device collection area"
+"sampling event, latitude, start"
+"sampling event, longitude, end"
+"sampling event, longitude, start"
+"sampling event, start, latitude"
+"sampling event, start, longitude"
+"sampling station, label"
+"site of specimen 1-stom, 2-small_int, 3-colon/rect, 4-perit, 5-liver, 6-other"
+(country
+*geo_loc_name
+2nd_geo_loc
+accession location
+acquisition site
+additional_lat_lon
+address
+adlt_chld_subfrg_country
+adlt_chld_targ_subfrag_cntry
+adm
+adm_day
+admin_region
+admin_village
+admin_woreda
+affected area
+agroclimatic_zone
+airport
+aliquot_at_locality
+allograft location
+alt_elev
+altitud
+altitude
+altitude_
+altitude__m_
+altitude__m_a.s.l._
+altitude__m.a.s.l._
+altitude_[m]
+altitude_m_
+altitude_note
+altitute
+american_viticultural_area
+anonymized_center_identifier
+aquaculture origin
+archaeological site
+area
+area of sampling site
+area_code
+area_of_sampling_site
+area_sampled
+assigned_from_geo
+associate geo_sample
+associated geo
+atlas_tag_number
+atlaslivingaustralia
+bait coordinates
+bait_coordinate
+bait_coordinates
+bait_location
+bait_region
+barcode coordinate
+barcode_location
+barcode_region
+basin name
+basin_name
+beach
+bio region
+bioclim12
+biogeographic_realm
+biogeography
+biological material coordinates uncertainty
+biological material geographic location
+biological material longitude
+biomaterial_provide
+biomaterial_provider
+biopsy_location
+bioregion
+biospecimen.location..extract.
+birch_vicinity
+birth location
+birth location latitude
+birth location longitude
+birth origin
+birth_lat_lon
+birth_location
+birth_location_accuracy
+birth_location_latitude
+birth_location_longitude
+birth_origin
+birth_place
+birth_sow_farm_#
+birthplace
+body_location
+bodylocation
+broad-scale environmental context
+building_id
+building_name
+c1 plate coordinate
+c1capturesite
+cage_location
+cal_sites
+capture_location
+capture_site
+capture-c viewpoint
+capturing location
+capturing_location
+caspian_sea_metagenome
+cat_location
+catch_fao
+catchment_area
+cca site
+cce lter cruise
+ccrc collection
+ccz_region
+cd_location
+cell_barcode_base_location
+census_region
+center
+center name
+center_name
+centre
+ch1903_lv03_longitude_y
+city
+city_area
+city_id
+citys_geographical_zone
+classification based in place of isolation
+climatic_zone
+clinic_location_of_sample_collection
+clinical_center
+clinical_centre
+closest_city
+closest_locality
+cns subregion
+cntry_targ_subfrag_2
+coast(c)_shelf(s)_offshore(o)
+cohort center
+coll_site_geo_feat
+colleciton location
+collected_from
+collecting_institute
+collecting_institution
+collecting_location
+collection island
+collection latitude
+collection locality
+collection location
+collection locations
+collection longitude
+collection order
+collection place
+collection point
+collection site
+collection site and cell type
+collection site geographic feature
+collection site/time transplantation
+collection sites
+collection state
+collection_area
+collection_continent
+collection_coordinates
+collection_country
+collection_hostiptal
+collection_lake
+collection_landscape
+collection_latitude
+collection_loc
+collection_locality
+collection_location
+collection_locations
+collection_longitude
+collection_place
+collection_point
+collection_region
+collection_sample_area
+collection_site
+collection_site_and_cell_type
+collection_site_name
+collection_site_or_growth_conditions
+collection_sites
+collection_source
+collection_state
+colony origin
+colony_locality
+column_loc
+common_sample_site
+commune
+community state type
+contact_information
+continent
+continent collected
+continent_collected
+continentocean
+contributing_institute
+coordinate
+coordinate_sample_loc
+coordinates
+coordinateuncertaintyinmeters
+corrected
+corrected_sample_site
+country
+country of birth
+country of contamination
+country of infection
+country of isolation
+country of origin
+country of origin - pmid:19597147
+country of travel
+country source
+country_code
+country_exposure
+country_location
+country_nation
+country_of_birth
+country_of_infection
+country_of_isolation
+country_of_origin
+country_of_origin___pmid:19597147
+country_of_origin_specifics
+country_origin
+country_region
+country_residence
+country_source
+country/collection site
+country/location
+countryoforigin
+countryorigin
+countryorregion
+county
+crc site
+cruise station
+ctd station
+culture origin
+culture place
+culture_location
+cultured_location
+current_region
+current_zip
+dam
+dam id
+dec_lattitude
+dec_longitude
+dec_low_elev
+decimal degree
+decimal_latitude
+decimal_longitude
+decimaldegrees
+decimallatitude
+decimallongitude
+delivery_place
+deploy_region
+derivation location
+derivation_location
+description - site
+description of sampling area
+destination environmental system
+destination_name
+detail_geographic_locality
+detailed geographic info
+detailed sample location
+detailed_latitude_and_longitude
+detailed_location
+discovery_location
+disease location
+district
+dive site
+dog_location
+donor geograhic location of residence
+donor geographic location of residence
+donor_geograhic_location_of_residence
+donor_geographic_location_of_residence
+donor_long
+donor_origin
+drinking_water_at_work_city_bottle_well
+drinking_water_source
+drinking_water_source_city_bottled_well
+dune_zone
+dys broad location
+east-west
+eastern-most range edge
+easting
+eco_zone
+economic_region
+ecoregion level iv
+ecotype locality
+eel_river_tributary
+efabis breed country
+elev
+elev__m_
+elev__m.a.s.l_
+elev_above_water
+elev_m_
+elevation
+elevation__m_
+elevation__meters_
+elevation_1
+elevation_2
+elevation_3
+elevation_at_doc
+elevation_m
+elevation_m_
+elevation_meters
+elevation_metres
+elevation..m.
+enrichment source soil
+env broad scale
+env-local-scale
+envirnonmental-sample
+environment (featurel)
+environment adjacent to site
+environment location
+environment state
+environment where sample was taken
+environment_location
+environmental_conditions
+environmental_marine_region
+environmental_sample
+environmental_site
+environmental-sample
+envrionmental-sample
+es state
+estimated latitude of seawater source
+estimated longitude of seawater source
+estimated state of origin
+estimated_elevation
+estimated_latitude_of_seawater_source
+estimated_longitude_of_seawater_source
+estuary
+ever_tbi_w_loc
+exact location
+exact seed sampling location
+exact site
+exact_location
+excavation_site
+exercise_location
+experiment site
+experiment_location1
+experiment_location2
+experimental site
+experimental site name
+experimental_pond
+extraction site
+extraction_location
+f_state_ind
+fac-sorting
+facility
+facility_or_location
+family_site
+fao fishing area
+farm_site
+farms
+feces_source
+female state
+female_birth_location
+field collector
+field location
+field museum (chicago)
+field sample
+field site
+field_grown_on
+field_location
+field_location_id
+field_plot
+field_rep
+field_sample
+field_site
+field_site_name
+filter_location
+fish origin
+fish_origin
+fjord
+floodplain
+food distribution point geographic location
+food distribution point geographic location (city)
+food product origin geographic location
+food_origin
+food_source
+food_source_human_food
+food_source_pet_store_food
+forward_barcode_location
+foundress origin
+full_location
+gaplocation
+garden_location
+gcms_run_location
+gdna_plate_location
+genbank_submission:_country
+gene bank country
+gene_bank_country
+general area
+general_location
+generalized_location
+genome_loc
+geo
+geo accession
+geo loc exposure
+geo loc name
+geo loc_name
+geo___loc___name
+geo_coor
+geo_lac_name
+geo_loc
+geo_loc_exposure
+geo_loc_lat
+geo_loc_long
+geo_loc_missingme
+geo_loc_name
+geo_loc_name_(samled_in_the_wild)
+geo_loc_name_continent
+geo_loc_name_coord
+geo_loc_name_country
+geo_loc_name_country_continent
+geo_loc_name_site/ region
+geo_loc_name2
+geo_location
+geo_log_name
+geo_position
+geo_region
+geo_sample
+geo_village
+geo-loc-name
+geo: loc: name
+geo:_loc:_name
+geo:loc:name
+geo.loc.name
+geo+af8_loc+af8_name
+geodetic_datum
+geodetic_system
+geodeticdatum
+geografic_location
+geographic
+geographic _location
+geographic area
+geographic coordinates
+geographic location
+geographic location (area)
+geographic location (country 2)
+geographic location (country and
+geographic location (country and-or sea)
+geographic location (country and/or atlantic ocean)
+geographic location (country and/or sea
+geographic location (country and/or sea region)
+geographic location (country and/or sea)
+geographic location (country and/or sea).�
+geographic location (country)
+geographic location (latitude and longitude)
+geographic location (latitude)
+geographic location (latitude)*
+geographic location (latitudeandlongitude)
+geographic location (lattitude)
+geographic location (locality area)
+geographic location (locality)
+geographic location (longitude)
+geographic location (ocean)
+geographic location (postal code)
+geographic location (province)
+geographic location (province/state)
+geographic location (region and locality
+geographic location (region and locality)
+geographic location (region and locality) checklist_accession
+geographic location (region and locality)'
+geographic location (region and/or locality)
+geographic location (region or locality)
+geographic location (region)
+geographic location country and or sea
+geographic location country and/or sea
+geographic location end (latitude_end)
+geographic location end (longitude_end)
+geographic location latitude
+geographic location longitude
+geographic location name country
+geographic location primers 2
+geographic location region and locality
+geographic location region and/or locality)
+geographic location start (latitude_start)
+geographic location start (longitude_start)
+geographic locations of isolates
+geographic origin
+geographic origin of sample
+geographic__location
+geographic_ancestral_origins
+geographic_area
+geographic_coordinates
+geographic_feature
+geographic_location
+geographic_location__altitude_
+geographic_location__altitude_elevation_
+geographic_location__area_
+geographic_location__country_
+geographic_location__country_2_
+geographic_location__country_and_or_____________________sea_region_
+geographic_location__country_and_or_atlantic_ocean_
+geographic_location__country_and_or_sea
+geographic_location__country_and_or_sea	_region_
+geographic_location__country_and_or_sea_
+geographic_location__country_and_or_sea__region_
+geographic_location__country_and_or_sea_region_
+geographic_location__country:region_area_
+geographic_location__countryand_orsea_region_
+geographic_location__depth_
+geographic_location__elevation_
+geographic_location__latitude_
+geographic_location__latitude__longitude_
+geographic_location__latitude_*
+geographic_location__latitude_and_____________________longitude_
+geographic_location__latitude_and_longitude_
+geographic_location__locality_
+geographic_location__locality_area_
+geographic_location__longitude_
+geographic_location__longitude_*
+geographic_location__province_
+geographic_location__region_and_locality_
+geographic_location__region_and_or_locality_
+geographic_location_country
+geographic_location_country_and_or_sea
+geographic_location_details
+geographic_location_latitude
+geographic_location_longitude
+geographic_location_primer_1
+geographic_location_primers_2
+geographic_location_region_and_locality
+geographic_location_region_and_or_locality_
+geographic_locations_of_isolates
+geographic_origin
+geographic_origin_of_sample
+geographic.location
+geographic.location_latitude
+geographic.location_longitude
+geographic.location..country.and.or.sea.
+geographic.location..latitude.
+geographic.location..longitude.
+geographic.location..region.and.locality.
+geographic.location.latitude
+geographic.location.longitude
+geographical area
+geographical biosample
+geographical distribution
+geographical location
+geographical location (lat_lon)
+geographical location (longitude and longitude)
+geographical origin
+geographical position
+geographical_area
+geographical_distribution
+geographical_location
+geographical_location__country:region__location_
+geographical_location__depth_
+geographical_location__elevation_
+geographical_location__lat_lon_
+geographical_location__longitude_and_longitude_
+geographical_origin
+geographical_position
+geographical_region
+geographiclocation
+geographiclocation_latitude_
+geography
+geogre_tetz
+geogrphic_location__country_and_or_sea__region_
+geoloc_name
+geolocation
+geolocation_name
+geolocationname
+geolocname
+geological_location_name
+geome_coverage
+georeference
+georeferenced_by
+glacier
+global
+global_region
+goe_loc_name
+gographic_location__longitud_
+gps
+gps coordinates
+gps latitute s
+gps location
+gps longitude w
+gps n
+gps_coord
+gps_coord_decimal_deg
+gps_coordinates
+gps_e
+gps_elev_less_estimated_elev
+gps_elevation
+gps_latitute_s
+gps_location
+gps_longitude_w
+gps_n
+gr_maxlong_dd
+gr_minlong_dd
+grassland
+grid_location
+grid_position
+grocerystore_restaurant_etc
+growing_site
+habitat
+habitat host
+habitat_be
+habitat_cp
+habitat_description
+habitat_dslp
+harvest-site
+harvested_at
+hatch_site
+hatchery/farm
+health_care_institutes
+hemisphere
+hemsundet__south_west_finland
+hhs_region
+hive_origin
+horizontal_location
+hospital_address
+host background
+host id
+host site
+host state
+host type_wine
+host_clade_sensu_fukami
+host_collection_lat_lon
+host_collection_site
+host_country_of_origin
+host_country_of_residence
+host_delivery
+host_farm
+host_history_of_diarrhea
+host_location
+host_location_sampled
+host_of_host_gravid
+host_of_host_infrank
+host_of_host_name
+host_of_insect
+host_population_origin
+host_residence
+host_residency_area
+host_salmonella_carriage
+host_sample_site
+host_seed_origin
+host_site_sampled
+host_tissue_location
+host_toxoplasma_gondii
+hpv state
+hspc supporting capacity
+human state
+human vaginal environmental package
+hygienic food production area
+icp forest country and plot code
+id simple
+id_and_site
+id_location
+in.out
+individual_number_for_each_locality
+individual_tag
+infection_isolate
+initial data_file
+injury state
+input id
+insdc center name
+interation site
+international_travel_location
+investigation location
+ircf id
+island
+islandgroup
+isola
+isolate_orig
+isolated_site
+isolated_where
+isolated-by
+isolation area
+isolation coordinates
+isolation country
+isolation location
+isolation site
+isolation source host associated
+isolation timepoint
+isolation_country
+isolation_location
+isolation_region
+joint location
+kit_loc
+lake
+lake area
+lake layer
+lake name
+lake_form
+lake_id
+land district
+landform
+lat
+lat lo n
+lat lon
+lat___lon
+lat_google_cord
+lat_lan
+lat_len
+lat_lo
+lat_lo_n
+lat_lon
+lat_lon (n:w)
+lat_lon or region
+lat_lon site a
+lat_lon site b
+lat_lon__n:w_
+lat_lon_2
+lat_lon_dms
+lat_lon_range
+lat_long
+lat_long_correct
+lat_long_details
+lat_long_flag
+lat_long_start
+lat_n
+lat_n_lon
+lat_sn..dd.
+lat_sp..dd.
+lat_summer
+lat_winter
+lat-lon
+lat-long
+lat.lon
+latitude
+latitude (at river mouth)
+latitude (n)
+latitude (raw)
+latitude (river mouth)
+latitude (s)
+latitude [degrees_north]
+latitude [n]
+latitude and logitude
+latitude and longitude
+latitude and longtitude
+latitude and lonitude
+latitude end
+latitude longitude
+latitude start
+latitude__longitude
+latitude__raw_
+latitude__s_
+latitude_[n]
+latitude_and_logitude
+latitude_and_longitude
+latitude_and_longitude_(2)
+latitude_and_longitude_(3)
+latitude_and_longtitude
+latitude_deg
+latitude_end
+latitude_longitude
+latitude_provided
+latitude_start
+latitude_units
+latitude-longitude
+latitude.dd
+latitude/longitude
+latitudes
+latitudinal degrees
+latitudinal minute
+latitudinal second
+latitute
+latlon
+latlong information
+lattitude
+lattitude and logitude
+lattitude_and_logitude
+library plate coordinate
+library_location
+library_preparation_location
+library_preparation_location_latitude
+library_preparation_location_longitude
+living_place
+lng
+local
+local classification
+local origin
+local scale environmental context
+local storage location
+local_environmental_context
+local_location_notes
+local_scale_environmental_contex
+local_scale_environmental_context
+locale
+localisation
+localities
+locality
+locality notes
+locality_description
+locality_name
+locality_no.
+localization
+localization description
+localization details
+localregionname
+location
+location collected
+location coordinates
+location description
+location generated
+location id
+location in column
+location isolated
+location name
+location of collection
+location of where sample was taken from environment site
+location or room in facility
+location ortet
+location within the united kingdom
+location_abbrev
+location_address
+location_and_rep
+location_basin
+location_code
+location_coordinates
+location_deployed
+location_description
+location_experiment
+location_in_lake
+location_in_microcosm
+location_information
+location_name
+location_of_capture
+location_of_collection
+location_of_common_garden_trial
+location_of_origin
+location_province
+location_replicates
+location_sampled
+location_sampling
+location_treatment
+location_type_2
+locationcell
+locationcode
+locations
+lon
+lon (w)
+lon_lat
+lon_sp..dd.
+lon_summer
+longi
+longitdue
+longittude
+longitude
+longitude (at river mouth)
+longitude (e)
+longitude (raw)
+longitude (w)
+longitude [degrees_east]
+longitude [e]
+longitude and latitude
+longitude start
+longitude__latitude
+longitude__raw_
+longitude__w_
+longitude_deg
+longitude_end
+longitude_start
+longitude_units
+longitude.dd
+longitudinal degrees
+longitudinal visit
+mangrove_forest
+map
+map location
+map_32weeks
+map_location
+map_mm
+marine region
+material for culture geographical location
+material source coordinates uncertainty
+material source country of first registration
+material source geographic location
+material source latitude
+material source longitude
+material_location
+matrilineal_origin_geo_loc_name
+matrilineal_origin_lat_lon
+md_loc
+metadata_patlocation
+mhcountrybrth
+milieu
+mixed_lat_lon
+mock_origin
+monitoring_station
+mound topography
+mountain
+mountain_range
+mu location
+multiple_lat_lon
+municipality
+municipio
+na_plate_location
+name of sample site
+name of the sampling site
+name_location
+nation
+nearby stream
+nearest_station
+nest identity
+nest_location
+noaa_site
+north(n)_south(s)_farsouth(f)
+northern-most range edge
+northing
+northsouth
+nosites
+num_tbi_w_loc
+oblast
+ocean
+ocean_area
+ocean_area_2009
+ocean_basin
+ocean_superregion
+oil_field
+on-shore/off-shore
+organization address
+organization country
+orig_sampleid
+origen of cultured cells
+origin
+origin (country)
+origin before_transfer
+origin farm
+origin location
+origin of isolates
+origin of isolation
+origin of sample
+origin of specimen
+origin of the parental plants
+origin of the plant
+origin of_ipscs
+origin sample
+origin site
+origin_communities
+origin_continent
+origin_country
+origin_name
+origin_region
+origin_sample
+origin_state
+origin_type
+origin1
+original collection location
+original geographic location
+original geographic location (latitude)
+original geographic location (longitude)
+original place
+original population origin
+original sample id
+originates from
+origine
+other_gps_coordinates
+outdoorenvironment
+outplant
+outside
+ovijar of origin
+oysters_geo_loc
+oysters_lat_lon
+pacific
+pacific_ocean
+pangaea environmental context
+pangaea event
+pangaea_event
+paris classification
+participant origin
+passage-history
+passport
+pasture location
+patch_location
+patient country of birth
+patient of_origin
+patient origin
+patient state
+patient_country_of_birth
+patientid-region
+patrilineal_origin_geo_loc_name
+permafrost state
+physical specimen location
+physical_location
+physical_location_1
+physical_location_2
+physical_sample_location
+physical_specimen_location
+physical_specimen_location_specific
+pipe_location
+place
+place name
+place of collection
+place of isolation
+place of origin
+place_delivery
+place_name
+place_of_birth
+place_of_isolation
+place_of_origin
+plains
+plant_seed_origin
+plantation
+plasma_sample_acquired_from
+plasmid_location
+plate coord
+plate_based_sequencing - plate_label
+plate_coordinates
+plate_location
+plate_location__well_#__required_if_samples_will_be_provided_in_a_plate.
+plate_location_combined
+platelocation
+plot_loc
+plot_location
+plot_number_within_site
+plot_position_x_value
+plot_position_y_value
+plot_short
+political_area
+pond location
+pond_location
+population sample location
+population_origin
+population_sample_location
+population/region
+port
+port i.d
+position_in_field
+postal code
+postal_code
+postalcode
+pot_soil_species_environment_country
+practice_location
+prairie
+prep-site
+prov
+provenance (long)
+providence
+province
+province_code
+province/state
+publication country - pmid:20520727
+publication_country___pmid:20520727
+read directions
+rearing farm
+recruitment_site
+recurrence_site
+reef
+reef site
+reef_of_origin
+reef_region
+region
+region (hhs)
+region characterization
+region description
+region isolated
+region label
+region name
+region of origin
+region of_interest_id
+region_iso_code
+region_sampled
+region_targeted
+region-based dissection
+regionid
+regionname
+regionre
+regions analysed
+regionsubregioncode
+rel_ca
+rel_location
+relative_location
+remnant_or_disturbed_site
+repl_per_sampling_location
+replicatespeciestissuelocality
+republic
+reservoir_location
+residence
+residence_no
+retail_purchase_location
+rhesus monkey origin
+rice_field
+river
+river_bend
+river_segment
+roi x coordinate
+roi x_coordinate
+ross_sea_regions
+run center
+sam.loc
+samp_area_we_dna_ext
+samp_collect_dev
+samp_collect_point
+samp_region
+sample acquisition location
+sample area
+sample collected in field
+sample collection
+sample collection point
+sample depth or location
+sample lat
+sample location
+sample origin
+sample point
+sample port
+sample region
+sample site
+sample state
+sample_area
+sample_center
+sample_collection
+sample_collection_point
+sample_collection_site
+sample_from
+sample_location
+sample_location_code
+sample_location_detail
+sample_location_full_name
+sample_location_in_relation_to_plant_centre
+sample_location_name
+sample_origin
+sample_orignin
+sample_point
+sample_position
+sample_region
+sample_site
+sample_site_exact
+sample_site_id
+sample_source_of_isolate
+sample_state
+sample_storage__location
+sample_storage_location
+sample_title_mdcounty
+sample_v_locus
+sample-location
+sample.loc
+sampled locations
+sampled site
+sampled_location
+sampled_locations
+sampled_site
+samplelocation
+sampleorigin
+samplepoint
+sampleregion
+samples collected at
+samples_in_pool
+samplesite
+sampling event
+sampling location
+sampling point
+sampling post confirm
+sampling postion
+sampling region
+sampling sea
+sampling site
+sampling site for lcm
+sampling site id
+sampling spot
+sampling station
+sampling zones
+sampling_area
+sampling_dec_lat
+sampling_event__latitude__end
+sampling_event__latitude__start
+sampling_event__longitude__end
+sampling_event__longitude__start
+sampling_event__start__latitude
+sampling_event__start__longitude
+sampling_expedition
+sampling_loc
+sampling_location
+sampling_location_region
+sampling_place
+sampling_point
+sampling_point_description
+sampling_port
+sampling_region
+sampling_site
+sampling_site_id
+sampling_station
+sampling_trip
+sampling_visit
+sampling_zone
+samplinglocation
+samplingpoint
+samplingsite
+samplingstation
+scn subregion
+sd_location
+sd_near_outfall_lat
+sd_number_outfalls_within_1km
+sd_or_la
+sd_y_coord
+sea_water_level
+second location latitude and longitude
+section_region
+section/region
+seed_region
+separation_location
+separation-location
+seq site
+seq_region
+sequenced_region
+sequencing_company_and_location
+sequencing_location
+sequencing_location_latitude
+sequencing_location_latitude_units
+sequencing_location_longitude
+sequencing_location_longitude_units
+shelf_location
+site
+site and hole
+site and replicate
+site characteristic
+site coordinates
+site id
+site info
+site location
+site name
+site number
+site of extraction
+site of isolation
+site of lesion
+site of_origin
+site on map
+site sampled
+site type
+site_code_location
+site_description
+site_group
+site_label
+site_lat
+site_location
+site_long
+site_no
+site_nr
+site_of_sample_collection
+site_sampled
+site_station
+site_taken
+site_wname
+site.transect location(m)
+site.transect_location_m_
+site/watershed
+sitecode
+siteid
+sitelatitude
+sitelocation
+sitelongitude
+sitename
+sites
+sites_cal_1-3mm
+sites_cal_4-5mm
+skin_region
+slope_location
+snow cover
+soil location
+soil origin
+soil region
+soil_collection_site
+soil_geo_loc_name
+soil_lat_lon_site_1
+soil_lat_lon_site_2
+soil_location
+soil_origin
+soil_region
+soil_sample_site
+source location
+source material latitude
+source material longitude
+source region
+source_area
+source_c
+source_colony
+source_location
+source_longitude_latitude_elev_m_
+source_longitude_latitude_elev(m)
+source_sample
+source_site
+sourcecountry
+sourcecountrystate
+sourcestate
+space_typ_state
+spacial sample location
+spatial location
+spatial position
+spatial_location
+spatiallocation
+species_location
+specieslocalilty
+specific intertidal location
+specific sample collection location
+specific zone
+specific_location
+specific_location_name
+specific_region
+specific_zone
+specimen collection location - country
+specimen collection location - location
+specimen collection location - longitude
+specimen site
+specimen_collection_location___country
+specimen_collection_location___latitude
+specimen_collection_location___location
+specimen_collection_location___longitude
+specimen_location
+stake location
+stake_location
+state
+state (cntn_id)
+state at extraction
+state of louisiana permit
+state of organism
+state_at_last_checkup
+state_location
+state_of_birth
+state_of_oyster_origin
+state_or_region
+state_us
+state/province
+stateprovince
+states
+station_muc
+station_name
+stationid
+stem_region
+stnm
+stock cohort
+stool_dna_location
+storage location at nib
+stored_latitude
+stored_longitude
+stranding_loc
+stream site short name
+stream_location
+stream_system
+street address
+study center
+study site
+study_area
+study_location
+study_site
+study_site_name
+sub region
+sub_geo_loc
+sub_location
+sub-area
+sub-region
+subject_site
+subjective_ses_country
+submitted_lat_lon
+subregion
+subway_location
+surface water site
+surface_location
+survey
+survey_site
+swab_location_code
+swablocation
+target region
+target_region
+temperate zone
+tgeo_loc_name
+tissue harvest site
+title_body_site
+tlat_lon
+topographic_position
+topotype
+tow_n
+town
+town_of_origin_in_colombia_south_america
+transect position
+transect_location
+transectbegindecimallatitude
+transectbegindecimallongitude
+transectenddecimallatitude
+transectenddecimallongitude
+transectlocation
+transplant_site
+travel history
+travel_history
+travel_locations_list
+tree sampled at site
+tree_sampled_at_site
+ulcer_location
+umi_base_location
+umi_coordinate
+umi_position
+urban
+urban_rural
+us_id
+us_region
+usa state
+usgs station
+utm (easting)
+utm (northing)
+utm_55g_northing
+valley
+vent field
+vent site
+vent_field_name
+verbatimlocality
+village
+village_of_pacient
+village_shabono_name
+villages
+vine region
+vine_region
+vineyard
+vineyard location
+vineyard locations
+vineyard_block
+vineyard_location
+vineyard_locations
+vineyard1
+viral geographic origin
+virus_state
+visit
+visit new
+visit_code
+visit/collection
+volcano_name
+voucher location
+voucher_locality
+voucher_location
+vv lat
+w_longitude
+wastewater sample site
+wastewater surveillance jurisdiction
+water point
+water source shared
+water/sediment origin
+waterbody
+waterorigin
+weather_station
+well
+well address
+well location
+well_coordinate
+well_location
+well_location_relative_to_source
+wellkey
+western-most range edge
+wetland
+wgc id
+wgs
+wild_donor_collection_location
+winegrowing village
+winery_site
+winter_region
+ww_sample_site
+ww_surv_jurisdiction
+ycoords
+zip-code
+zipcode
