@@ -10,8 +10,14 @@ Common classes and functions in use by all the scripts here.
 
 Static datasets (i.e. not SRA) used to create some of the tables on the logan project.
 
-## lambda
+## [lambda](lambda)
 
-## script
+Code for the AWS Lambda functions that support the logan project.
 
-## table
+## [script](script)
+
+...
+
+## [table](table)
+
+Information about all the tables in the postgres database that support the logan project.
