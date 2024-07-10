@@ -191,4 +191,4 @@ try {
 
 ## Functions
 
-[See code](common.js).
+[See code](common.js)
