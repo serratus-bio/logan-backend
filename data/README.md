@@ -14,6 +14,10 @@ List of attribute_name(s) that was compiled from:
    Prompt:
    *The user will provide the name of an attribute, taken from the NCBI BioSample database. You have to infer if this attribute could be used to describe a geographical location from the name alone. If it describes a geographical location, answer "YES"; otherwise answer "NO". Please only answer "YES" or "NO" and nothing else.*
 
+### WordNet
+
+Adjective and noun lists from the [WordNet](https://wordnet.princeton.edu/) English lexical database.
+
 ### worldcities.csv
 
 List of city and country names used by the BioSample attribute_value classifier. Creative Commons Attribution 4.0 license.
