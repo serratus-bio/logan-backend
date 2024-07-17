@@ -8,6 +8,9 @@
 * [geometry_multipolygon_4326](geometry_multipolygon_4326.md)
 * [geometry_polygon_4326_wwf_tew](geometry_polygon_4326_wwf_tew.md)
 * [sra](sra.md)
+* [taxonomy_names](taxonomy_names.md)
+* [taxonomy_lineage](taxonomy_lineage.md)
+* [taxonomy_nodes](taxonomy_nodes.md)
 
 ## Materialized Views
 

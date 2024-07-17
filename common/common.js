@@ -94,7 +94,7 @@ export const XMLParser = args => {
 };
 
 /**
- * Splits an array into chunks of n size
+ * Splits an array into chunks of n size.
  * 
  * e.g. when n === 2
  * [a, b, c, d, e] => [[a, b], [c, d], [e]]
@@ -114,6 +114,14 @@ export const arrayChunk = (a, n) => Array.from({ length:Math.ceil(a.length/n) },
 export const arrayShuffle = a => a.sort(() => Math.random()-0.5);
 
 /**
+ * Returns undefined when a string is empty, otherwise returns the string.
+ * 
+ * @param {*} s string
+ * @returns undefined | string
+ */
+export const emptyStringToUndefined = s => s === '' ? undefined : s;
+
+/**
  * Quickly computes a string that is properly escaped for an CSV file.
  * Much more efficient than loading a CSV library just for this.
  * 
@@ -127,14 +135,25 @@ export const escapeCSVValue = s => /[\n",]/.test(s)
   ? '"' + s.replace(/"/g, '""') + '"'
   : s;
 
-  /**
-   * Returns a string with the minutes and seconds elapsed
-   * in the specified millisecond interval.
-   * 
-   * @param {*} ms milliseconds
-   * @returns string [00m00s]
-   */
+/**
+ * Returns a string with the minutes and seconds elapsed
+ * in the specified millisecond interval.
+ * 
+ * @param {*} ms milliseconds
+ * @returns string [00m00s]
+ */
 export const msToMS = ms => ' ' + (ms/1000/60|0).toLocaleString() + 'm' + String(((ms/1000)|0)%60).padStart(2, '0') + 's';
+
+/**
+ * Returns a string with an INSERT prepared statement for the specified
+ * table, columns and number of rows.
+ * 
+ * @param {*} args.columns array with column names
+ * @param {*} args.table table name
+ * @param {*} args.rows number of rows
+ * @returns string
+ */
+export const insertQuery = args => 'INSERT INTO ' + args.table + ' (' + args.columns.map(v => '"' + v + '"').join(', ') + ') VALUES ' + Array.from({ length:args.rows }, (a0, b0) => '(' + Array.from({ length:args.columns.length }, (a1, b1) => '$' + (args.columns.length*b0+b1+1)) + ')').join(', ') + ';';
 
 /**
  * Asks the user for input, returns the string that was provided.

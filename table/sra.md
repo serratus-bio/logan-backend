@@ -85,12 +85,12 @@ Usage:
 
 Set up the following environment variables to its proper values:
 
- * GOOGLE_APPLICATION_CREDENTIALS
- * PGDATABASE
- * PGHOST
- * PGPASSWORD
- * PGPORT
- * PGUSER
+ * ```GOOGLE_APPLICATION_CREDENTIALS```
+ * ```PGDATABASE```
+ * ```PGHOST```
+ * ```PGPASSWORD```
+ * ```PGPORT```
+ * ```PGUSER```
 
 Then run:
 
