@@ -22,14 +22,12 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const console = new Console(process.stderr);
 
 const ADJECTIVE_READ_STREAM = createReadStream(join(__dirname, '../../data/WordNet/adjective'));
+const N = 1024*1024*16;
 const NOUN_READ_STREAM = createReadStream(join(__dirname, '../../data/WordNet/noun'));
-
 const PALMDB_SOTU_NICNKNAME_LIST = createReadStream(join(__dirname, '../../data/palmdb/palmdb2.sotu.nickname.list.20240715'));
 
-const N = 1024*1024*16;
-
 let ADJECTIVE = undefined;
-for await (const line of createInterface({
+for await(const line of createInterface({
   crlfDelay:Infinity,
   input:ADJECTIVE_READ_STREAM
 })) {
@@ -40,7 +38,7 @@ for await (const line of createInterface({
 }
 
 let NOUN = undefined;
-for await (const line of createInterface({
+for await(const line of createInterface({
   crlfDelay:Infinity,
   input:NOUN_READ_STREAM
 })) {
