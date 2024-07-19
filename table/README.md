@@ -1,5 +1,15 @@
 # table
 
+*All tables/views in the database should have a file here with (at least):*
+
+ * *Overall description with origin of the data*
+ * *A list of their columns with their description*
+ * *SQL commands to create the table schema*
+ * *SQL commands to create the column indexes*
+ * *How to insert and/or update the records in the table*
+
+ ---
+
 ## Dirty Tables/Views
 
 * **palm_virome**
@@ -24,12 +34,8 @@
 * [bgl_gm4326](bgl_gm4326.md)
 * [bgl_gp4326_wwf_tew](bgl_gp4326_wwf_tew.md)
 
-## Guidelines
+## WIP
 
-All tables/views in the database should have a file here with (at least):
+* **biosample_geographical_location**
 
- * Overall description with origin of the data
- * A list of their columns with their description
- * SQL commands to create the table schema
- * SQL commands to create the column indexes
- * How to insert and/or update the records in the table
+  The `palm_virome` column was generated manually, retrofit/remove.
