@@ -17,7 +17,14 @@
 * [bgl_gm4326](bgl_gm4326.md)
 * [bgl_gp4326_wwf_tew](bgl_gp4326_wwf_tew.md)
 
-All tables/views should have (at least):
+## Dirty Tables
+
+* **palm_virome**
+  Raw copy of `palm_virome` from serratus on July 29, 2024
+
+## Guidelines
+
+All tables/views in the database should have a file here with (at least):
 
  * Overall description with origin of the data
  * A list of their columns with their description

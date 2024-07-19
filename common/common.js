@@ -104,6 +104,24 @@ export const XMLParser = args => {
  * @returns array of arrays
  */
 export const arrayChunk = (a, n) => Array.from({ length:Math.ceil(a.length/n) }, (e, i) => a.slice(i*n, i*n+n));
+
+/**
+ * Generates an array of objects from an array of arrays and a list of columns.
+ * 
+ * e.g.
+ *   a = [[1, 2], [3, 4]]
+ *   c = ['a', 'b']
+ * 
+ *   would return
+ * 
+ *   [{ a:1, b:2 }, { a:3, b:4 }]
+ * 
+ * @param {*} a array of arrays
+ * @param {*} c column names
+ * @returns array of objects
+ */
+export const arrayMapColumns = (a, c) => a.map(v => Object.fromEntries(c.map((_v, _i) => [_v, v[_i]])));
+
 /**
  * Returns an array's elements in a random order.
  * Biased, but good enough.
