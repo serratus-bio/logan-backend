@@ -17,11 +17,11 @@
 * [bgl_gm4326](bgl_gm4326.md)
 * [bgl_gp4326_wwf_tew](bgl_gp4326_wwf_tew.md)
 
-## Dirty Tables
+## Dirty Tables/Views
 
 * **palm_virome**
 
-  Raw copy of `palm_virome` from serratus on July 29, 2024
+  Raw copy of `palm_virome` from serratus on July 19, 2024
 
 ## Guidelines
 
