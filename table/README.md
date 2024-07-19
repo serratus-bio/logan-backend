@@ -1,5 +1,12 @@
 # table
 
+## Dirty Tables/Views
+
+* **palm_virome**
+
+  Raw copy of `palm_virome` from serratus on July 19, 2024.
+  Indexes on `run`, `bio_sample`, `bio_project`.
+
 ## Tables
 
 * [bioproject](bioproject.md)
@@ -16,12 +23,6 @@
 
 * [bgl_gm4326](bgl_gm4326.md)
 * [bgl_gp4326_wwf_tew](bgl_gp4326_wwf_tew.md)
-
-## Dirty Tables/Views
-
-* **palm_virome**
-
-  Raw copy of `palm_virome` from serratus on July 19, 2024
 
 ## Guidelines
 
