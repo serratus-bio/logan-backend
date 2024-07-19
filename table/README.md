@@ -10,6 +10,15 @@
 
  ---
 
+## Credentials
+
+|     |     |
+| --- | --- |
+| hostname | serratus-aurora-20210406.cluster-ro-ccz9y6yshbls.us-east-1.rds.amazonaws.com |
+| database | logan |
+| username | open_virome |
+| password | open_virome |
+
 ## Dirty Tables/Views
 
 * **palm_virome**
