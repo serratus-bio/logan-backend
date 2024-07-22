@@ -26,6 +26,17 @@
   Raw copy of `palm_virome` from serratus on July 19, 2024.
   Indexes on `run`, `bio_sample`, `bio_project`.
 
+* **biosample_tissue**
+
+  Raw copy of `biosample_tissue` from serratus on July 19, 2024.
+  Indexes on `biosample_id`.
+
+* **sra_stat**
+
+  Raw copy of `sra_stat` from serratus on July 19, 2024.
+  Indexes on `run`, `taxid`.
+
+
 ## Tables
 
 * [bioproject](bioproject.md)
