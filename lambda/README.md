@@ -92,7 +92,7 @@ To learn about the tables that are available, check out [table](../table).
  * Return rows as an array without the column names save on bandwith.
 
 
-## logan_AWS_RDS_proxy
+## logan_get_contig
 
 Retrieves individual contigs from SRA assembly resources on s3://logan-pub.
 
