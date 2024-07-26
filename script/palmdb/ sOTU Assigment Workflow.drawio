@@ -123,7 +123,7 @@
         <mxCell id="pcEnY2RNjyqCKXGkyiXo-52" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pcEnY2RNjyqCKXGkyiXo-49" target="pcEnY2RNjyqCKXGkyiXo-51">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="pcEnY2RNjyqCKXGkyiXo-49" value="populate sequences" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+        <mxCell id="pcEnY2RNjyqCKXGkyiXo-49" value="populate palmcore sequences" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
           <mxGeometry x="550" y="530" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="pcEnY2RNjyqCKXGkyiXo-54" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pcEnY2RNjyqCKXGkyiXo-51" target="pcEnY2RNjyqCKXGkyiXo-53">
