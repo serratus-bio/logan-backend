@@ -25,7 +25,8 @@ const FASTA = args => ({
 });
 
 export const handler = async event => {
-
+  let client = undefined;
+  
   if(event.requestContext.http.method === 'OPTIONS')
   return {
     headers:{
