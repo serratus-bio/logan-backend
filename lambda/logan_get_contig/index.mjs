@@ -1,6 +1,7 @@
 import { spawn } from 'node:child_process';
 import { createInterface } from 'node:readline';
 
+
 const FASTA = args => ({
   flush:async function() {
     if(this.queue) {
@@ -24,7 +25,17 @@ const FASTA = args => ({
 });
 
 export const handler = async event => {
-  let handler = undefined;
+
+  if(event.requestContext.http.method === 'OPTIONS')
+  return {
+    headers:{
+      'Access-Control-Allow-Headers':'*',
+      'Access-Control-Allow-Methods':'*',
+      'Access-Control-Allow-Origin':'*'
+    },
+    statusCode:200
+  };
+}
 
   if(event.headers?.authorization !== 'Bearer 20240522')
     return { statusCode:401 };
