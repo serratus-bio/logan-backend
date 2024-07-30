@@ -25,7 +25,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="pcEnY2RNjyqCKXGkyiXo-23" value="&lt;div&gt;all_intact_palmprints.faa&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="230" y="272.5" width="140" height="20" as="geometry" />
+          <mxGeometry x="230" y="270" width="140" height="20" as="geometry" />
         </mxCell>
         <mxCell id="pcEnY2RNjyqCKXGkyiXo-28" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="pcEnY2RNjyqCKXGkyiXo-25" target="pcEnY2RNjyqCKXGkyiXo-26" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -123,13 +123,13 @@
         <mxCell id="qipjCbiUXeIvuoldf0_X-62" value="mapFASTASequences.js" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="480" y="820" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="VFu0eOYfGQJj1M0cjpmJ-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qipjCbiUXeIvuoldf0_X-63">
+        <mxCell id="VFu0eOYfGQJj1M0cjpmJ-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qipjCbiUXeIvuoldf0_X-63">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="200" y="1610.5" as="targetPoint" />
+            <mxPoint x="200" y="1600" as="targetPoint" />
             <Array as="points">
               <mxPoint x="690" y="900" />
-              <mxPoint x="690" y="1570" />
-              <mxPoint x="200" y="1570" />
+              <mxPoint x="690" y="1560" />
+              <mxPoint x="200" y="1560" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -161,31 +161,31 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="qipjCbiUXeIvuoldf0_X-100" value="&lt;div&gt;usearch&lt;/div&gt;&lt;div&gt;(usearch_global -id 0.9)&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
-          <mxGeometry x="80" y="1610" width="140" height="40" as="geometry" />
+          <mxGeometry x="80" y="1600" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="qipjCbiUXeIvuoldf0_X-110" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="qipjCbiUXeIvuoldf0_X-106" target="qipjCbiUXeIvuoldf0_X-109" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="qipjCbiUXeIvuoldf0_X-106" value="filter hits based on % identity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;dashed=1;dashPattern=8 8;" parent="1" vertex="1">
-          <mxGeometry x="80" y="1680" width="140" height="40" as="geometry" />
+          <mxGeometry x="80" y="1670" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="qipjCbiUXeIvuoldf0_X-112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="qipjCbiUXeIvuoldf0_X-109" target="qipjCbiUXeIvuoldf0_X-111" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="qipjCbiUXeIvuoldf0_X-109" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;more than 90% identity&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;but less than 100%&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" parent="1" vertex="1">
-          <mxGeometry x="80" y="1750" width="140" height="40" as="geometry" />
+          <mxGeometry x="80" y="1740" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="qipjCbiUXeIvuoldf0_X-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="qipjCbiUXeIvuoldf0_X-111" target="qipjCbiUXeIvuoldf0_X-115" edge="1">
+        <mxCell id="VFu0eOYfGQJj1M0cjpmJ-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="qipjCbiUXeIvuoldf0_X-111" target="VFu0eOYfGQJj1M0cjpmJ-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="qipjCbiUXeIvuoldf0_X-111" value="assign new palmprint ID, sOTU and nickname" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;dashed=1;dashPattern=8 8;" parent="1" vertex="1">
-          <mxGeometry x="80" y="1820" width="140" height="40" as="geometry" />
+        <mxCell id="qipjCbiUXeIvuoldf0_X-111" value="remove those present on palmdb already" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;dashed=1;dashPattern=8 8;" parent="1" vertex="1">
+          <mxGeometry x="80" y="1810" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="qipjCbiUXeIvuoldf0_X-113" value="&lt;div&gt;new_sOTUs.csv&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="340" y="1350" width="110" height="20" as="geometry" />
         </mxCell>
         <mxCell id="qipjCbiUXeIvuoldf0_X-115" value="&lt;div&gt;new_palmprints.csv&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="80" y="1890" width="140" height="20" as="geometry" />
+          <mxGeometry x="80" y="1950" width="140" height="20" as="geometry" />
         </mxCell>
         <mxCell id="qipjCbiUXeIvuoldf0_X-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="qipjCbiUXeIvuoldf0_X-117" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -274,7 +274,7 @@
           <mxGeometry x="480" y="1280" width="180" height="40" as="geometry" />
         </mxCell>
         <mxCell id="qipjCbiUXeIvuoldf0_X-206" value="&lt;div&gt;new_palmprints.faa&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="480" y="1520" width="180" height="20" as="geometry" />
+          <mxGeometry x="480" y="1510" width="180" height="20" as="geometry" />
         </mxCell>
         <mxCell id="qipjCbiUXeIvuoldf0_X-223" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="qipjCbiUXeIvuoldf0_X-213" target="pcEnY2RNjyqCKXGkyiXo-23" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -304,7 +304,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="qipjCbiUXeIvuoldf0_X-233" value="&lt;b&gt;+&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillStyle=auto;fillColor=#000000;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="190" y="1560" width="20" height="20" as="geometry" />
+          <mxGeometry x="190" y="1550" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="VFu0eOYfGQJj1M0cjpmJ-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -317,6 +317,12 @@
             <mxPoint x="430" y="1270" as="sourcePoint" />
             <mxPoint x="430" y="1300" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="VFu0eOYfGQJj1M0cjpmJ-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="VFu0eOYfGQJj1M0cjpmJ-13" target="qipjCbiUXeIvuoldf0_X-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VFu0eOYfGQJj1M0cjpmJ-13" value="assign new palmprint ID, sOTU and nickname" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1880" width="140" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
