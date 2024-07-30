@@ -25,9 +25,9 @@ const FASTA = args => ({
 });
 
 export const handler = async event => {
-  let client = undefined;
+  // let client = undefined;
   
-  if(event.requestContext.http.method === 'OPTIONS')
+  if(event.requestContext.http.method === 'OPTIONS') {
   return {
     headers:{
       'Access-Control-Allow-Headers':'*',
@@ -58,14 +58,13 @@ export const handler = async event => {
   if(!body || !body.SRA || !body.contig)
     return { statusCode:400 };
 
+  let sequences = [];
   const fasta = FASTA({ onSequence:sequence => {
     if(body.contig.includes(sequence.match(/^>(.+?)\s/)[1])) {
-      if(!handler)
-        handler = [];
-        
-      handler.push(sequence);
+      sequences.push(sequence);
     }
   } });
+
 
   for await (const line of createInterface({
     input:spawn('sh', ['-c', 'curl https://logan-pub.s3.amazonaws.com/c/' + body.SRA + '/' + body.SRA + '.contigs.fa.zst | bin/zstd']).stdout,
@@ -76,7 +75,15 @@ export const handler = async event => {
   await fasta.flush();
   
   return {
-    ...handler && { body:handler.join('\n') + '\n' },
+  
+    headers:{
+      'Access-Control-Allow-Headers':'*',
+      'Access-Control-Allow-Methods':'*',
+      'Access-Control-Allow-Origin':'*'
+    },
+    
+    ...(sequences.length > 0 && {body: sequences.join('\n') + '\n' }),
     statusCode:200
+    
   };
 };
