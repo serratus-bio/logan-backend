@@ -1,7 +1,6 @@
 import { spawn } from 'node:child_process';
 import { createInterface } from 'node:readline';
 
-
 const FASTA = args => ({
   flush:async function() {
     if(this.queue) {
@@ -25,18 +24,16 @@ const FASTA = args => ({
 });
 
 export const handler = async event => {
-  // let client = undefined;
-  
   if(event.requestContext.http.method === 'OPTIONS') {
-  return {
-    headers:{
-      'Access-Control-Allow-Headers':'*',
-      'Access-Control-Allow-Methods':'*',
-      'Access-Control-Allow-Origin':'*'
-    },
-    statusCode:200
-  };
-}
+    return {
+      headers:{
+        'Access-Control-Allow-Headers':'*',
+        'Access-Control-Allow-Methods':'*',
+        'Access-Control-Allow-Origin':'*'
+      },
+      statusCode:200
+    };
+  }
 
   if(event.headers?.authorization !== 'Bearer 20240522')
     return { statusCode:401 };
@@ -75,15 +72,12 @@ export const handler = async event => {
   await fasta.flush();
   
   return {
-  
+    ...(sequences.length > 0 && {body: sequences.join('\n') + '\n' }),
     headers:{
       'Access-Control-Allow-Headers':'*',
       'Access-Control-Allow-Methods':'*',
       'Access-Control-Allow-Origin':'*'
     },
-    
-    ...(sequences.length > 0 && {body: sequences.join('\n') + '\n' }),
     statusCode:200
-    
   };
 };
