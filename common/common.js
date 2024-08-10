@@ -1,6 +1,8 @@
 import { Parser } from 'node-expat';
+import { createReadStream } from 'node:fs';
 import { clearLine, cursorTo } from 'node:readline';
 import { createInterface } from 'node:readline/promises';
+import { PassThrough } from 'node:stream';
 
 export const Counter = args => ({
   a:undefined,
@@ -28,6 +30,41 @@ export const Counter = args => ({
     ++this.o[v];
   }
 });
+
+export const FASTAParser = args => {
+  let FASTA = undefined;
+
+  const FASTAParser = Object.assign(
+    new PassThrough()
+      .on('pipe', src => {
+        createInterface({ input:src })
+          .on('close', FASTAParser.flush)
+          .on('line', line => {
+            if(line[0] === '>') {
+              FASTAParser.flush();
+
+              FASTA = [line];
+            } else if(FASTA) {
+              if(!FASTA[1])
+                FASTA[1] = [];
+
+              FASTA[1].push(line);
+            }
+          });
+        
+        FASTAParser.resume();
+      }),
+      { flush:() => {
+        if(FASTA) {
+          FASTAParser.emit('FASTA', [FASTA[0]].concat(FASTA[1] ? FASTA[1].join('\n') : []));
+
+          FASTA = undefined;
+        }
+      } }
+    );
+  
+  return FASTAParser;
+};
 
 export const Queue = args => ({
   flush:async function() {
@@ -130,6 +167,113 @@ export const arrayMapColumns = (a, c) => a.map(v => Object.fromEntries(c.map((_v
  * @returns array
  */
 export const arrayShuffle = a => a.sort(() => Math.random()-0.5);
+
+/**
+ * Returns a function that consumes and returns a value from an async iterable
+ * object each time it is called.
+ * @param {*} async iterable object
+ * @returns async function
+ */
+export const asyncFunctionFromAsyncIterable = asyncIterable => {
+  const asyncGenerator = asyncIterable();
+
+  return async () => {
+    const IteratorResult = await asyncGenerator.next();
+
+    if(!IteratorResult.done)
+      return IteratorResult.value;
+  };
+};
+
+/**
+ * Returns a function that consumes a row from a CSV file each time it is called
+ * Column names are read and mapped to each row according the header line
+ * @param {*} args 
+ * @returns async function
+ */
+export const asyncFunctionForCSV = async args => {
+  const asyncFunction = asyncFunctionFromAsyncIterable(
+    asyncIterableFromAsyncIterator(
+      createInterface({ input:createReadStream(args.input) })
+    )
+  );
+
+  const columns = (await asyncFunction()).split(/,/);
+
+  return async function() {
+    let row = await asyncFunction();
+
+    if(row) {
+      row = row.split(/,/);
+
+      return Object.fromEntries(columns.map((v, i) => [v, row[i]]));
+    }
+  };
+};
+
+/**
+ * Returns an async generator function that consumes an AsyncIterator.
+ * @param {*} AsyncIterator
+ * @returns async iterable object
+ */
+export const asyncIterableFromAsyncIterator = asyncIterator => async function* () {
+  for await(const v of asyncIterator)
+    yield v;
+};
+
+/**
+ * Returns an async generator function that binds to a specific event on a
+ * ReadableStream and yields the values coming through it until it is closed.
+ * @param {*} args.on
+ * @param {*} args.stream
+ * @returns async iterable object
+ */
+export const asyncIterableFromStream = args => {
+  let { promise, resolve, reject } = Promise.withResolvers();
+
+  let buffer = undefined;
+  let readable = true;
+
+  args.stream
+    .on('close', () => {
+      readable = false;
+
+      resolve();
+    })
+    .on('end', () => {
+      readable = false;
+
+      resolve();
+    })
+    .on('error', () => {
+      readable = false;
+
+      resolve();
+    })
+    .on(args.on, value => {
+      if(!buffer)
+        buffer = [];
+
+      buffer.push(value);
+
+      resolve();
+    });
+
+  return async function* () {
+    while(readable || buffer) {
+      await promise;
+
+      if(buffer) {
+        while(buffer.length)
+          yield buffer.shift();
+
+        buffer = undefined;
+      }
+
+      ({ promise, resolve, reject } = Promise.withResolvers());
+    }
+  };
+};
 
 /**
  * Returns undefined when a string is empty, otherwise returns the string.
