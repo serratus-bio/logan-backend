@@ -161,7 +161,7 @@ export const arrayMapColumns = (a, c) => a.map(v => Object.fromEntries(c.map((_v
 
 /**
  * Returns an array's elements in a random order.
- * Biased, but good enough.
+ * Slightly biased, but still good enough for some applications.
  * 
  * @param {*} a array
  * @returns array
@@ -186,27 +186,30 @@ export const asyncFunctionFromAsyncIterable = asyncIterable => {
 };
 
 /**
- * Returns a function that consumes a row from a CSV file each time it is called
- * Column names are read and mapped to each row according the header line
- * @param {*} args 
- * @returns async function
+ * Returns an async generator that consumes a CSV file line by line.
+ * Each line is parsed and an array is returned with all the fields found in it.
+ * If [args.header == true] then an object is returned instead, with key/value
+ * pairs mapped according to the CSV file header.
+ * @param {*} args.header
+ * @param {*} args.input
+ * @returns async iterable object
  */
-export const asyncFunctionForCSV = async args => {
-  const asyncFunction = asyncFunctionFromAsyncIterable(
-    asyncIterableFromAsyncIterator(
-      createInterface({ input:createReadStream(args.input) })
-    )
-  );
+export const asyncIterableFromCSV = async args => {
+  const asyncIterator = asyncIterableFromAsyncIterator(
+    createInterface({ input:createReadStream(args.input) })
+  )();
 
-  const columns = (await asyncFunction()).split(/,/);
+  if(args.header)
+    args.header = splitCSVLine((await asyncIterator.next()).value);
 
-  return async function() {
-    let row = await asyncFunction();
+  return async function* () {
+    for await(let v of asyncIterator) {
+      v = splitCSVLine(v);
 
-    if(row) {
-      row = row.split(/,/);
+      if(args.header)
+        v = Object.fromEntries(args.header.map((_v, _i) => [_v, v[_i]]));
 
-      return Object.fromEntries(columns.map((v, i) => [v, row[i]]));
+      yield v;
     }
   };
 };
@@ -352,6 +355,14 @@ export const promptYN = async question => {
     || v.trim().toLowerCase() === 'y'
     || v.trim().toLowerCase() === 'yes';
 };
+
+/**
+ * Returns each field of a CSV line as an array.
+ * 
+ * @param {*} s string
+ * @returns array of strings
+ */
+export const splitCSVLine = s => s.split(/,(?=(?:[^"]*"[^"]*")*[^"]*$)/).map(field => field.replace(/^"(.*)"$/, '$1'));
 
 /**
  * Returns a normalized version of a string, applying the following operations:
