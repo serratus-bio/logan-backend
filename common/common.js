@@ -207,7 +207,7 @@ export const asyncIterableFromCSV = async args => {
       v = splitCSVLine(v);
 
       if(args.header)
-        v = Object.fromEntries(args.header.map((_v, _i) => [_v, v[_i]]));
+        v = arrayMapColumns([v], args.header);
 
       yield v;
     }
