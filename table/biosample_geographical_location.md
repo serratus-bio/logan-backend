@@ -43,6 +43,6 @@ CREATE INDEX idx_biosample_geographical_location_palm_virome ON biosample_geogra
 
 ...
 
-## Notes
+### Notes
 
 The `palm_virome` column was generated and retrofitted manually.
