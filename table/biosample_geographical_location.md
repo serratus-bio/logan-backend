@@ -23,7 +23,8 @@ CREATE TABLE biosample_geographical_location (
   accession TEXT,
   attribute_name TEXT,
   attribute_value TEXT,
-  lat_lon GEOMETRY(POINT, 4326)
+  lat_lon GEOMETRY(POINT, 4326),
+  palm_virome BOOLEAN
 );
 ```
 
@@ -41,3 +42,7 @@ CREATE INDEX idx_biosample_geographical_location_palm_virome ON biosample_geogra
 ### Insert / Update
 
 ...
+
+## Notes
+
+The `palm_virome` column was generated and retrofitted manually.
