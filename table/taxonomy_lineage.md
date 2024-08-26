@@ -81,6 +81,6 @@ CREATE INDEX idx_taxonomy_lineage_tax_id ON taxonomy_lineage(tax_id);
 
 [NCBI_taxdump_upload_to_POSTGRES.js](../script/NCBI_taxdump_upload_to_POSTGRES.js)
 
-Usage:
+**Usage**
 
 See [NCBI_taxdump_upload_to_POSTGRES.md](../script/NCBI_taxdump_upload_to_POSTGRES.md).

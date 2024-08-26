@@ -41,7 +41,7 @@
 
 * [bioproject](bioproject.md) [MISSING DOCUMENTATION]
 * [biosample](biosample.md) [MISSING DOCUMENTATION]
-* [biosample_geographical_location](biosample_geographical_location.md) [MISSING DOCUMENTATION]
+* [biosample_geographical_location](biosample_geographical_location.md)
 * [geometry_multipolygon_4326](geometry_multipolygon_4326.md) [MISSING DOCUMENTATION]
 * [geometry_polygon_4326_wwf_tew](geometry_polygon_4326_wwf_tew.md) [MISSING DOCUMENTATION]
 * [sra](sra.md)
@@ -54,8 +54,8 @@
 * [bgl_gm4326](bgl_gm4326.md) [MISSING DOCUMENTATION]
 * [bgl_gp4326_wwf_tew](bgl_gp4326_wwf_tew.md) [MISSING DOCUMENTATION]
 
-## WIP
+## Notes
 
 * **biosample_geographical_location**
 
-  The `palm_virome` column was generated manually, retrofit/remove.
+  The `palm_virome` column was generated and retrofitted manually.

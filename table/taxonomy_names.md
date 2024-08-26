@@ -38,6 +38,6 @@ ALTER TABLE taxonomy_names CLUSTER ON idx_taxonomy_names_name_class;
 
 [NCBI_taxdump_upload_to_POSTGRES.js](../script/NCBI_taxdump_upload_to_POSTGRES.js)
 
-Usage:
+**Usage**
 
 See [NCBI_taxdump_upload_to_POSTGRES.md](../script/NCBI_taxdump_upload_to_POSTGRES.md).

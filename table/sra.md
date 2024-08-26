@@ -2,7 +2,7 @@
 
 Raw copy of (most of the columns in the) SRA metadata, fetched from BigQuery.
 
-See, [NCBI documentation site](https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud-based-metadata-table/).
+See [NCBI documentation site](https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud-based-metadata-table/).
 
 ### Columns
 
@@ -81,7 +81,7 @@ CREATE INDEX idx_sra_bioproject ON sra(bioproject);
 
 [SRA_stream_from_BQ_to_POSTGRES.js](../script/SRA_stream_from_BQ_to_POSTGRES.js)
 
-Usage:
+**Usage**
 
 Set up the following environment variables to its proper values:
 
@@ -100,7 +100,7 @@ node script/SRA_stream_from_BQ_to_POSTGRES.js \
   --table sra
 ```
 
-Output:
+**Output**
 ```
 # of records BQ: 30,986,947 POSTGRES: 30,986,947  182m16s (Queue.n=1024)
 ```
