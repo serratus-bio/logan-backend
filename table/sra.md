@@ -2,7 +2,7 @@
 
 Raw copy of (most of the columns in the) SRA metadata, fetched from BigQuery.
 
-See [NCBI documentation site](https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud-based-metadata-table/).
+See [NCBI SRA Cloud-based Metadata Table](https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud-based-metadata-table/).
 
 ### Columns
 
