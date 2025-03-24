@@ -24,7 +24,7 @@ A compressed file (~8GB uncompressed) with a CSV dump of the whole table is avai
 | attribute_name | Attribute name from where lat_lon was inferred |
 | attrbute_value | Attribute value used to infer lat_lon from |
 | lat_lon | Location in the globe (latitude, longitude) following the WGS84 standard (4326 in postGIS) and encoded in WKB form |
-| palm_virome | true if a viral palmprint is found on the BioSample (according to [serratus](https://serratus.io/)) |
+| palm_virome | true if a viral palmprint is found on the BioSample (according to [Serratus](https://serratus.io/)) |
 | elevation | Height above mean sea level in meters (negative elevations are present) |
 | center_name | true if a specific attrobute_value is predicted to describe a center name |
 | country | Three letter code of the country whose the coordinate belongs to. Empty if no match to any country boundary. |
