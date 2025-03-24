@@ -8,7 +8,7 @@ From the resolved coordinates we can calculate:
 
 * **elevation**. Source, [ASTER Global Digital Elevation Model](https://cmr.earthdata.nasa.gov/search/concepts/C1711961296-LPCLOUD.html).
 
-* **country**. Source, [opendatsoft, World Administrative Boundaries](https://public.opendatasoft.com/explore/dataset/world-administrative-boundaries/export/).
+* **country**. Source, [opendatasoft - World Administrative Boundaries](https://public.opendatasoft.com/explore/dataset/world-administrative-boundaries/export/).
 
 * **biome**. Source, [WWF Terrestrial Ecoregions of the World](https://www.worldwildlife.org/publications/terrestrial-ecoregions-of-the-world).
 
