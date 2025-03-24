@@ -14,7 +14,7 @@ From the resolved coordinates we can calculate:
 
 * **confidence**. Three different geocoding providers were used (AWS Esri, AWS HERE and Azure), a confidence scoring system was devised to rank the quality of these predictions. The confidence value goes from 0 to 6 and is calculated as [country confidence (0-3), +1 for each pair of predictions lying within the same country boundary] + [distance confidence (0-3), +1 for each pair of predictions within 8km of each other].
 
-A compressed file (~8GB uncompressed) with a CSV dump of the whole table is available at S3,[biosample_geographical_location.202503.csv.gz](https://serratus-public.s3.us-east-1.amazonaws.com/geo/biosample_geographical_location.202503.csv.gz).
+A compressed file (~8GB uncompressed) with a CSV dump of the whole table is available at S3, [biosample_geographical_location.202503.csv.gz](https://serratus-public.s3.us-east-1.amazonaws.com/geo/biosample_geographical_location.202503.csv.gz).
 
 ### Columns
 
@@ -24,7 +24,7 @@ A compressed file (~8GB uncompressed) with a CSV dump of the whole table is avai
 | attribute_name | Attribute name from where lat_lon was inferred |
 | attrbute_value | Attribute value used to infer lat_lon from |
 | lat_lon | Location in the globe (latitude, longitude) following the WGS84 standard (4326 in postGIS) and encoded in WKB form |
-| palm_virome | true if a viral palmprint is found inside the BioSample |
+| palm_virome | true if a viral palmprint is found on the BioSample (according to [serratus](https://serratus.io/)) |
 | elevation | Height above mean sea level in meters (negative elevations are present) |
 | center_name | true if a specific attrobute_value is predicted to describe a center name |
 | country | Three letter code of the country whose the coordinate belongs to. Empty if no match to any country boundary. |
