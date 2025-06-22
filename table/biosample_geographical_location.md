@@ -14,7 +14,7 @@ From the resolved coordinates we can calculate:
 
 * **confidence**. Three different geocoding providers were used (AWS Esri, AWS HERE and Azure), a confidence scoring system was devised to rank the quality of these predictions. The confidence value goes from 0 to 6 and is calculated as [country confidence (0-3), +1 for each pair of predictions lying within the same country boundary] + [distance confidence (0-3), +1 for each pair of predictions within 8km of each other].
 
-A compressed file (~8GB uncompressed) with a CSV dump of the whole table is available at S3, [biosample_geographical_location.202503.csv.gz](https://serratus-public.s3.us-east-1.amazonaws.com/geo/biosample_geographical_location.202503.csv.gz).
+A compressed file (~8GB uncompressed) with a CSV dump of the whole table is available at S3, [biosample_geographical_location.202506.csv.gz](https://serratus-public.s3.us-east-1.amazonaws.com/geo/biosample_geographical_location.202506.csv.gz).
 
 ### Columns
 
