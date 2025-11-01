@@ -22,7 +22,7 @@ For all the resolved coordinates, we also provide:
 
   Locations inferred from coordinates do not have a confidence value as no geocoding step took place. When multiple geo attributes are present in a sample, coordinates can be considered to be the value with the highest accuracy.
 
-  To get a slice of this dataset of the highest quality we recommend querying with `confidence IS NULL OR confidence > 3`.
+  To get a slice of this dataset of the highest quality, we recommend querying with `confidence IS NULL OR confidence > 3`.
   
   We decided to provide all values, even low confidence ones, as they still might be useful for some use cases.
 
