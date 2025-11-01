@@ -2,9 +2,15 @@
 
 Roughly, this table was generated as follows:
 
-All geographical locations (lat/lon pairs) were inferred from attributes of [NCBI BioSample](https://www.ncbi.nlm.nih.gov/biosample/)s, using several geocoding providers. Source, [biosample_set.xml.gz](https://ftp.ncbi.nlm.nih.gov/biosample/biosample_set.xml.gz). Retrieved on 2024-06-28.
+All geographical locations (lat/lon pairs) were inferred from attributes of [NCBI BioSample](https://www.ncbi.nlm.nih.gov/biosample/)s. Source, [biosample_set.xml.gz](https://ftp.ncbi.nlm.nih.gov/biosample/biosample_set.xml.gz). Retrieved on 2024-06-28.
 
-From the resolved coordinates we can calculate:
+Two categories were identified:
+
+* **coordinates**. Values that represent an explicit (lat, lon) pair. e.g.: The string `43.39604014 N 79.23584362 W` translates to `(43.396040,-79.235843)`.
+
+* **place names**. A value that refers to a place by its name, they were resolved into coordiantes by using several geocoding providers. e.g.: The string `University of Toronto` is inferred to be at `(43.663487,-79.3958273)`.
+
+For all the resolved coordinates, we also provide:
 
 * **elevation**. Source, [ASTER Global Digital Elevation Model](https://cmr.earthdata.nasa.gov/search/concepts/C1711961296-LPCLOUD.html).
 
@@ -13,6 +19,10 @@ From the resolved coordinates we can calculate:
 * **biome**. Source, [WWF Terrestrial Ecoregions of the World](https://www.worldwildlife.org/publications/terrestrial-ecoregions-of-the-world).
 
 * **confidence**. Three different geocoding providers were used (AWS Esri, AWS HERE and Azure), a confidence scoring system was devised to rank the quality of these predictions. The confidence value goes from 0 to 6 and is calculated as [country confidence (0-3), +1 for each pair of predictions lying within the same country boundary] + [distance confidence (0-3), +1 for each pair of predictions within 8km of each other].
+
+  Locations inferred from coordinates do not have a confidence value as no geocoding step took place. When multiple geo attributes are present in a sample, coordinates can be considered to be the value with the highest accuracy.
+
+  To get a slice of this data with the highest quality, we recommend querying with `confidence IS NULL OR confidence > 3`. We decided to provide all values, even low confidence ones, as they might be useful in some contexts.
 
 A compressed file (~8GB uncompressed) with a CSV dump of the whole table is available at S3, [biosample_geographical_location.202506.csv.gz](https://s3.amazonaws.com/logan-pub/paper/geo_metadata/biosample_geographical_location.202506.csv.gz).
 
