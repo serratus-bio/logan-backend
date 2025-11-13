@@ -18,6 +18,9 @@ For all the resolved coordinates, we also provide:
 
 * **biome**. Source, [WWF Terrestrial Ecoregions of the World](https://www.worldwildlife.org/publications/terrestrial-ecoregions-of-the-world).
 
+  - Test table 1
+  - Test table 2
+
 * **confidence**. Three different geocoding providers were used (AWS Esri, AWS HERE and Azure), a confidence scoring system was devised to rank the quality of these predictions. The confidence value goes from 0 to 6 and is calculated as [country confidence (0-3), +1 for each pair of predictions lying within the same country boundary] + [distance confidence (0-3), +1 for each pair of predictions within 8km of each other].
 
   Locations inferred from coordinates do not have a confidence value as no geocoding step took place. When multiple geo attributes are present in a sample, coordinates can be considered to be the value with the highest accuracy.
