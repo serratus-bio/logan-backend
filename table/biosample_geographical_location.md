@@ -16,10 +16,27 @@ For all the resolved coordinates, we also provide:
 
 * **country**. Source, [opendatasoft - World Administrative Boundaries](https://public.opendatasoft.com/explore/dataset/world-administrative-boundaries/export/).
 
-* **biome**. Source, [WWF Terrestrial Ecoregions of the World](https://www.worldwildlife.org/publications/terrestrial-ecoregions-of-the-world).
+* **biome**. Source, [WWF Terrestrial Ecoregions of the World](https://www.worldwildlife.org/publications/terrestrial-ecoregions-of-the-world), as follows:
 
-  - Test table 1
-  - Test table 2
+  - WWF_TEW_BIOME_01: Tropical & Subtropical Moist Broadleaf Forests
+  - WWF_TEW_BIOME_02: Tropical & Subtropical Dry Broadleaf Forests
+  - WWF_TEW_BIOME_03: Tropical & Subtropical Coniferous Forests
+  - WWF_TEW_BIOME_04: Temperate Broadleaf & Mixed Forests
+  - WWF_TEW_BIOME_05: Temperate Conifer Forests
+  - WWF_TEW_BIOME_06: Boreal Forests/Taiga
+  - WWF_TEW_BIOME_07: Tropical & Subtropical Grasslands, Savannas & Shrublands
+  - WWF_TEW_BIOME_08: Temperate Grasslands, Savannas & Shrublands
+  - WWF_TEW_BIOME_09: Flooded Grasslands & Savannas
+  - WWF_TEW_BIOME_10: Montane Grasslands & Shrublands
+  - WWF_TEW_BIOME_11: Tundra
+  - WWF_TEW_BIOME_12: Mediterranean Forests, Woodlands & Scrub
+  - WWF_TEW_BIOME_13: Deserts & Xeric Shrublands
+  - WWF_TEW_BIOME_14: Mangroves
+
+  - WWF_TEW_BIOME_98: Rock and Ice
+  - WWF_TEW_BIOME_99: Lakes
+
+  Samples that fall on oceans have no assigned biome.
 
 * **confidence**. Three different geocoding providers were used (AWS Esri, AWS HERE and Azure), a confidence scoring system was devised to rank the quality of these predictions. The confidence value goes from 0 to 6 and is calculated as [country confidence (0-3), +1 for each pair of predictions lying within the same country boundary] + [distance confidence (0-3), +1 for each pair of predictions within 8km of each other].
 
