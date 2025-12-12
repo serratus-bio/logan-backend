@@ -33,8 +33,8 @@ For all the resolved coordinates, we also provide:
   - WWF_TEW_BIOME_13: Deserts & Xeric Shrublands
   - WWF_TEW_BIOME_14: Mangroves
 
-  - WWF_TEW_BIOME_98: Rock and Ice
-  - WWF_TEW_BIOME_99: Lakes
+  - WWF_TEW_BIOME_98: Lakes
+  - WWF_TEW_BIOME_99: Rock and Ice
 
   Samples that fall on oceans have no assigned biome.
 
